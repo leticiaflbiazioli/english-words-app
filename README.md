@@ -17,12 +17,14 @@ Esse projeto possui uma aplicação back-end respectiva que pode ser consultada 
 
 ## 📂 Estrutura de Pastas
 
+```
 src/
-├── api/ # Serviços e middlewares relacionadas a chamadas de API
-├── app/ # Contém a aplicação principal
-│ ├── pages/ # Rotas
-├── components/ # Componentes reutilizáveis
-├── utils/ # Funções utilitárias
+├── api/          # Serviços e middlewares relacionadas a chamadas de API
+├── app/          # Contém a aplicação principal
+│ ├── pages/      # Rotas
+├── components/   # Componentes reutilizáveis
+├── utils/        # Funções utilitárias
+```
 
 ---
 
