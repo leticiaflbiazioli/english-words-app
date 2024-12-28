@@ -11,7 +11,7 @@ Esse projeto possui uma aplicação back-end respectiva que pode ser consultada 
 
 - **Linguagem**: TypeScript
 - **Framework**: NextJS
-- **Estilização\***: Tailwind CSS
+- **Estilização**: Tailwind CSS
 
 ---
 
