@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Plataforma de Gerenciamento de Palavras em inglês
 
-## Getting Started
+## 📝 Descrição
 
-First, run the development server:
+Este projeto é uma interface desenvolvida para gerenciar informações sobre palavras em inglês (pronúncia, significado, sinônimos, etc). Ele permite funcionalidades como registro e autenticação de usuários, busca por palavras, adição de favoritos e consulta ao histórico.
+Esse projeto possui uma aplicação back-end respectiva que pode ser consultada [nesse link](https://github.com/leticiaflbiazioli/english-words-api) e é necessária para as chamadas aos endpoints contidas neste projeto.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Linguagem**: TypeScript
+- **Framework**: NextJS
+- **Estilização\***: Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Estrutura de Pastas
 
-To learn more about Next.js, take a look at the following resources:
+src/
+├── api/ # Serviços e middlewares relacionadas a chamadas de API
+├── app/ # Contém a aplicação principal
+│ ├── pages/ # Rotas
+├── components/ # Componentes reutilizáveis
+├── utils/ # Funções utilitárias
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚙️ Funcionalidades
 
-## Deploy on Vercel
+### **1. Criação de conta**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Descrição**: Permite que o usuário se cadastre na aplicação.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **2. Login**
+
+- **Descrição**: Permite que o usuário faça login na aplicação usando email e senha.
+
+### **3. Dashboard**
+
+- **Descrição**:
+
+  - Campo de Pesquisa: Permite ao usuário buscar uma nova palavra.
+
+  - Histórico de Pesquisas: Lista as palavras recentemente pesquisadas. Ao clicar em uma palavra do histórico, abre uma página com detalhes da palavra.
+
+### **4. Lista de palavras em inglês**
+
+- **Descrição**: Mostra uma lista de todas as palavras disponíveis no dicionário. Ao clicar em uma palavra, há o redirecionamento para uma página com os detalhes da mesma.
+
+### **5. Histórico de palavras consultadas**
+
+- **Descrição**: Exibe uma lista com todas as palavras consultadas e as respectivas datas de visualização.
+
+### **6. Listagem de palavras favoritas**
+
+- **Descrição**: Exibe todas as palavras marcadas como favoritas. Permite desfavoritar uma palavra diretamente na lista. Ao clicar em uma palavra favorita, abre a página de detalhes.
+
+### **7. Detalhes sobre uma palavra específica**
+
+- **Descrição**: Exibe as informações detalhadas da palavra pesquisada, além das opções de favoritar ou desfavoritar a palavra.
+
+### **8. Logout**
+
+- **Descrição**: Opção para que o usuário saia da aplicação.
+
+---
+
+## 🚀 Como subir a aplicação
+
+### **1. Pré-requisitos**
+
+- Node.js (versão 16 ou superior)
+- Gerenciador de pacotes: NPM
+
+### **2. Instalação**
+
+Clone o repositório e instale as dependências:
+
+`npm install`
+
+### **3. Configuração**
+
+Crie um arquivo _.env_ com as variáveis de ambiente necessárias.
+
+### **4. Inicialização**
+
+Inicie a aplicação:
+
+`npm run dev`
+
+A aplicação estará disponível em: http://localhost:5000. Lembre-se de rodar a o projeto da API em simultâneo.
